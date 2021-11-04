@@ -30,3 +30,35 @@ h3 {
     text-align: center;
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1.0);
 }
+
+/* Hyperlink */
+a {
+    text-decoration: underline;
+}
+
+/* Call Icon*/
+a:before {
+    content: "";
+    background: url(https://order.dominos.com.au/Resources/Images/svg/material/ic_phone_white_24px.svg);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    
+}
+
+/* Container */
+.container {
+    background-color: rgba(185, 185, 185, 1.0);
+    height: 250px;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Submit Button */
+input[type=submit] {
+    background-color: rgba(255, 255, 255, 1.0);
+}
