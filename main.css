@@ -13,20 +13,24 @@ h1 {
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1.0);
 }
 
-/* Form Text */
+/* Form Main Text */
 h2 {
-    color: rgba(255, 255, 255, 1.0);
     font-family: 'Oswald';
     font-size: 30px;
     text-align: center;
-    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1.0);
 }
 
-/* Other Text */
+/* Form Sub Text */
 h3 {
-    color: rgba(255, 255, 255, 1.0);
     font-family: 'Oswald';
     font-size: 20px;
+}
+
+/* Bottom Text */
+h4 {
+    color: rgba(255, 255, 255, 1.0);
+    font-family: 'Oswald';
+    font-size: 25px;
     text-align: center;
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1.0);
 }
