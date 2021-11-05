@@ -23,7 +23,8 @@ h2 {
 /* Form Sub Text */
 h3 {
     font-family: 'Oswald';
-    font-size: 20px;
+    font-size: 15px;
+	text-align: left;
 }
 
 /* Bottom Text */
