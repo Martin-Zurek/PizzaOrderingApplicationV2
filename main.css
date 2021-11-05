@@ -36,29 +36,32 @@ a {
     text-decoration: underline;
 }
 
-/* Call Icon*/
-a:before {
-    content: "";
-    background: url(https://order.dominos.com.au/Resources/Images/svg/material/ic_phone_white_24px.svg);
-    background-size: 100%;
-    width: 25px;
-    height: 25px;
-    display: block;
-    float: left;
-    
+/* Unvisited Link */
+a:link {
+    color: rgba(255, 255, 255, 1.0);
+}
+  
+/* Visited Link */
+a:visited {
+    color: rgba(255, 255, 255, 1.0);
+}
+  
+/* Mouse Over Link */
+a:hover {
+    color: rgba(185, 185, 185, 1.0)
+}
+  
+/* Selected Link */
+a:active {
+    color: rgba(255, 255, 255, 1.0);
 }
 
 /* Container */
 .container {
-    background-color: rgba(185, 185, 185, 1.0);
+    background-color: rgba(155, 155, 155, 1.0);
     height: 250px;
     width: 50%;
     margin: auto;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-/* Submit Button */
-input[type=submit] {
-    background-color: rgba(255, 255, 255, 1.0);
+    border-radius: 10px;
+    padding: 10px;
 }
