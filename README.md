@@ -2,9 +2,9 @@
 
 # PizzaOrderingApplicationV2
 
-The PizzaOrderingApplicationV2 is my work for an SDD assignment for school. The application is functional but still needs major work.
+This application is for an SDD assignment.
 
 # View Live Version
-* [Github Pages](https://martin-zurek.github.io/PizzaOrderingApplicationV2)
+* [Github Pages](https://martin-zurek.github.io/PizzaOrderingApplicationV2)**(Click here if you would like to view the live version of the application)**
 
 # Created By Martin
