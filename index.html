@@ -100,7 +100,7 @@
     </div>
 
     <!-- Array Of Records Code -->
-    <script type='text/javascript'>
+    <script>
 
     function AddOrder() {
       // Place text from text boxes into the end of the array.
@@ -124,6 +124,7 @@
       Postcode.value = "";
       displayOrder()
     }
+
     function displayOrder() {
       // Loop through to build up a string "orderString" with the each record and a line break.
       orderString = "";
@@ -135,6 +136,7 @@
       console.log(orderString);
       document.getElementById("Array").value = JSON.stringify(orderString);
     }
+
     </script>
   </body>
 </html>
