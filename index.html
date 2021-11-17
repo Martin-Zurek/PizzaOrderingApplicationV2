@@ -74,7 +74,7 @@
     <li>
     <h3>To confirm your order, click on the button below!</h3>
     <br>
-    <input type="submit" value="Confirm Order" onclick="addOrder()"/>
+    <input type="button" value="Confirm Order" onclick="addOrder()"/>
     </li>
     <br>
     <hr>
@@ -106,14 +106,14 @@
       // Place text from text boxes into the end of the array.
       order.push(
       {
-        // Delivery Details
+        // Delivery Details (Section).
         UnitNumber: document.getElementById("UnitNumber").value,
         StreetNumber: document.getElementById("StreetNumber").value,
         Street: document.getElementById("Street").value,
         Suburb: document.getElementById("Suburb").value,
         Postcode: document.getElementById("Postcode").value
 
-        // Add More Here
+        // Add the other information here.
       }
       )
       // Return text boxes to blank ready for next entry.
@@ -131,7 +131,7 @@
         orderString += order[i].UnitNumber + " - " + order[i].StreetNumber + " - " + order[i].Street + " - " + order[i].Suburb + " - " + order[i].Postcode + "\n"
       }
       orderString.value = orderString;
-      // For Testing
+      // This is for logs.
       console.log(orderString);
       document.getElementById("Array").value = JSON.stringify(orderString);
     }
