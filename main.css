@@ -1,157 +1,157 @@
 /* Background Color */
 body {
-    background-color: rgba(55, 55, 59, 1.0);
-    background-size: cover;
+  background-color: rgba(55, 55, 59, 1);
+  background-size: cover;
 }
 
 /* Main Text */
 h1 {
-    color: rgba(255, 255, 255, 1.0);
-    font-family: 'Oswald';
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1.0);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Oswald";
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1);
 }
 
 /* Form Main Text */
 h2 {
-    font-family: 'Oswald';
-    font-size: 30px;
-    text-align: left;
+  font-family: "Oswald";
+  font-size: 30px;
+  text-align: left;
 }
 
 /* Form Sub Text */
 h3 {
-    font-family: 'Oswald';
-    font-size: 15px;
-	text-align: left;
+  font-family: "Oswald";
+  font-size: 15px;
+  text-align: left;
 }
 
 /* Bottom Text */
 h4 {
-    color: rgba(255, 255, 255, 1.0);
-    font-family: 'Oswald';
-    font-size: 25px;
-    text-align: center;
-    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1.0);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Oswald";
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 1);
 }
 
 /* Checkbox Text */
 label {
-	font-family: 'Oswald';
-	font-size: 17.5px;
+  font-family: "Oswald";
+  font-size: 17.5px;
 }
 
 /* Hyperlink */
 a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Unvisited Link */
 a:link {
-    color: rgba(255, 255, 255, 1.0);
+  color: rgba(255, 255, 255, 1);
 }
-  
+
 /* Visited Link */
 a:visited {
-    color: rgba(255, 255, 255, 1.0);
+  color: rgba(255, 255, 255, 1);
 }
-  
+
 /* Mouse Over Link */
 a:hover {
-    color: rgba(185, 185, 185, 1.0)
+  color: rgba(185, 185, 185, 1);
 }
-  
+
 /* Selected Link */
 a:active {
-    color: rgba(255, 255, 255, 1.0);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Pizza Form */
-.pizzaform{
-    background: rgba(255, 255, 255, 1.0);
-	max-width: 450px;
-	padding: 30px;
-	margin: 50px auto;
-	border-radius: 10px;
-	border: 5px solid rgba(155, 155, 155, 1.0);
+.pizzaform {
+  background: rgba(255, 255, 255, 1);
+  max-width: 450px;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+  border: 5px solid rgba(155, 155, 155, 1);
 }
 
-.pizzaform ul{
-	padding: 0;
-	margin: 0;
-	list-style: none;
+.pizzaform ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.pizzaform ul li{
-	display: block;
-	margin-bottom: 10px;
-	min-height: 35px;
+.pizzaform ul li {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
 }
 
-.pizzaform ul li .field-style{
-	box-sizing: border-box; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	padding: 8px;
-	outline: none;
-	border: 1px solid rgba(205, 205, 205, 1.0);
+.pizzaform ul li .field-style {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  border: 1px solid rgba(205, 205, 205, 1);
 }
 
-.pizzaform ul li .field-style:focus{
-	box-shadow: 0 0 5px rgba(205, 205, 205, 1.0);
-	border: 1px solid rgba(205, 205, 205, 1.0);
+.pizzaform ul li .field-style:focus {
+  box-shadow: 0 0 5px rgba(205, 205, 205, 1);
+  border: 1px solid rgba(205, 205, 205, 1);
 }
 
-.pizzaform ul li .field-split{
-	width: 49%;
+.pizzaform ul li .field-split {
+  width: 49%;
 }
 
-.pizzaform ul li .field-full{
-	width: 100%;
+.pizzaform ul li .field-full {
+  width: 100%;
 }
 
-.pizzaform ul li input.align-left{
-	float: left;
+.pizzaform ul li input.align-left {
+  float: left;
 }
 
-.pizzaform ul li input.align-right{
-	float: right;
+.pizzaform ul li input.align-right {
+  float: right;
 }
 
-.pizzaform ul li textarea{
-    resize: none;
-	width: 100%;
-	height: 100px;
+.pizzaform ul li textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
 }
 
-.pizzaform ul li input[type="button"], 
+.pizzaform ul li input[type="button"],
 .pizzaform ul li input[type="submit"] {
-	background-color: rgba(105, 105, 105, 1.0);
-	border: 1px solid rgba(205, 205, 205, 1.0);
-	display: inline-block;
-	cursor: pointer;
-	color: rgba(255, 255, 255, 1.0);
-	padding: 8px 18px;
-	text-decoration: none;
-	font: 15px, 'Oswald';
+  background-color: rgba(105, 105, 105, 1);
+  border: 1px solid rgba(205, 205, 205, 1);
+  display: inline-block;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  padding: 8px 18px;
+  text-decoration: none;
+  font: 15px, "Oswald";
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background: rgba(255, 255, 255, 1);
-	background: rgba(255, 0, 0, 0);
-	background-color: transparent;
+  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 0, 0, 0);
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(135, 135, 135, 0.50);
+  background: rgba(135, 135, 135, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(135, 135, 135, 0.75);
+  background: rgba(135, 135, 135, 0.75);
 }
