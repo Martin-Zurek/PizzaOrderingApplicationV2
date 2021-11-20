@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title/Icon -->
+    <title>Pizza Ordering Application</title>
+    <link rel="icon" href="assets/icon.png" />
+
+    <!-- Stylesheet/Font -->
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+
+    <!-- Misc -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="maintext">
+    <!-- Main Text -->
+    <h1>Pizza Ordering Application</h1>
+    </div>
+
+    <!-- Start Form -->
+    <form class="pizzaform">
+    <ul>
+
+    <!-- Delivery Details -->
+    <h2>Delivery Details</h2>
+    <li>
+    <input type="text" id="UnitNumber" class="field-style field-split align-left" placeholder="Unit Number" required/>
+    <input type="text" id="StreetNumber" class="field-style field-split align-right" placeholder="Street Number" required/>
+    </li>
+    <li>
+    <input type="text" id="Street" class="field-style field-full align-none" placeholder="Street" required/>
+    </li>
+    <li>
+    <input type="text" id="Suburb" class="field-style field-split align-left" placeholder="Suburb" required/>
+    <input type="number" id="Postcode" class="field-style field-split align-right" min="2000" max="2560" maxlength="4" size="4" placeholder="Postcode" required/>
+    </li>
+    <br>
+    <hr>
+
+    <!-- Choose Pizza/Sides/Drink -->
+    <h2>Choose Pizza/Sides/Drink</h2>
+    <li>
+    <h3>Text Goes Here</h3>
+    <h3>Text Goes Here</h3>
+    <h3>Text Goes Here</h3>
+    </li>
+    <br>
+    <li>
+    <textarea name="field" class="field-style" placeholder="Text Goes Here 6"></textarea>
+    </li>
+    <br>
+    <hr>
+
+    <!-- Payment Information -->
+    <h2>Payment Information</h2>
+    <li>
+    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="field-style" required>
+    <label for="checkbox">Paid? (True/False)</label>
+    <br>
+    <br>
+    <h3>Click on the checkbox if you have paid.</h3>
+    </li>
+    <br>
+    <hr>
+
+    <!-- Order Summary -->
+    <h2>Order Summary</h2>
+    <li>
+    <h3>To confirm your order, click on the button below!</h3>
+    <br>
+    <input type="button" value="Confirm Order" onclick="addOrder()"/>
+    </li>
+    <br>
+    <hr>
+
+    <!-- Array Of Records -->
+    <h2>Array Of Records</h2>
+    <li>
+    <textarea id="Array" class="field-style" placeholder="Array Of Records"></textarea>
+    </li>
+
+    <!-- End Form-->
+    </ul>
+    </form>
+
+    <!-- Contact Us -->
+    <div class="contact">
+    <h4><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a></h4>
+    </div>
+
+    <!-- Bottom Text -->
+    <div id="bottomtext">
+    <h4>Made By Martin</h4>
+    </div>
+
+    <!-- Array Of Records Code -->
+    <script type="text/javascript">
+
+    function addOrder() {
+      // Place text from text boxes into the end of the array.
+      order.push(
+      {
+        // Delivery Details (Section).
+        UnitNumber: document.getElementById("UnitNumber").value,
+        StreetNumber: document.getElementById("StreetNumber").value,
+        Street: document.getElementById("Street").value,
+        Suburb: document.getElementById("Suburb").value,
+        Postcode: document.getElementById("Postcode").value
+
+        // Add the other information here.
+      }
+      )
+      // Return text boxes to blank ready for next entry.
+      UnitNumber.value = "";
+      StreetNumber.value = "";
+      Street.value = "";
+      Suburb.value = "";
+      Postcode.value = "";
+      displayOrder()
+    }
+
+    function displayOrder() {
+      // Loop through to build up a string "orderString" with the each record and a line break.
+      orderString = "";
+        for (let i = 0; i < order.length; i++) {
+        orderString += order[i].UnitNumber + " - " + order[i].StreetNumber + " - " + order[i].Street + " - " + order[i].Suburb + " - " + order[i].Postcode + "\n"
+      }
+      orderString.value = orderString;
+      // This is for logs.
+      console.log(orderString);
+      document.getElementById("Array").value = JSON.stringify(orderString);
+    }
+
+    </script>
+  </body>
+</html>
