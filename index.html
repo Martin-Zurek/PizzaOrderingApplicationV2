@@ -45,15 +45,56 @@
 
     <!-- Choose Pizza/Sides/Drink -->
     <h2>Choose Pizza/Sides/Drink</h2>
-    <li>
-    <h3>Text Goes Here</h3>
-    <h3>Text Goes Here</h3>
-    <h3>Text Goes Here</h3>
-    </li>
     <br>
+    <!-- Start Pizza Size -->
     <li>
-    <textarea name="field" class="field-style" placeholder="Text Goes Here 6"></textarea>
+    <h3>Pizza Size</h3>
+    <div>
+    <input type="radio" id="largepizza" name="drone" value="large" required>
+    <label for="large">Large</label>
+    </div>
+    <div>
+    <input type="radio" id="mediumpizza" name="drone" value="medium" required>
+    <label for="medium">Medium</label>
+    </div>
+    <div>
+    <input type="radio" id="smallpizza" name="drone" value="small" required>
+    <label for="small">Small</label>
+    </div>
     </li>
+    <!-- End Pizza Size -->
+    <br>
+    <!-- Start Pizza Base -->
+    <li>
+    <h3>Pizza Base</h3>
+    <div>
+    <input type="radio" id="tomatobase" name="drone" value="tomato" required>
+    <label for="tomato">Tomato</label>
+    </div>
+    <div>
+    <input type="radio" id="barbequebase" name="drone" value="barbeque" required>
+    <label for="barbeque">Barbeque</label>
+    </div>
+    </li>
+    <!-- End Pizza Base -->
+    <br>
+    <!-- Start Pizza Toppings -->
+    <li>
+    <h3>Pizza Toppings</h3>
+    <div>
+    <input type="radio" id="chickentoppings" name="drone" value="chicken" required>
+    <label for="chicken">Chicken</label>
+    </div>
+    <div>
+    <input type="radio" id="beeftoppings" name="drone" value="beef" required>
+    <label for="beef">Beef</label>
+    </div>
+    <div>
+    <input type="radio" id="lambtoppings" name="drone" value="lamb" required>
+    <label for="lamb">Lamb</label>
+    </div>
+    </li>
+    <!-- End Pizza Toppings -->
     <br>
     <hr>
 
@@ -74,7 +115,7 @@
     <li>
     <h3>To confirm your order, click on the button below!</h3>
     <br>
-    <input type="button" value="Confirm Order" onclick="addOrder()"/>
+    <input type="submit" value="Confirm Order"/>
     </li>
     <br>
     <hr>
@@ -99,44 +140,10 @@
     <h4>Made By Martin</h4>
     </div>
 
-    <!-- Array Of Records Code -->
-    <script type="text/javascript">
-
-    function addOrder() {
-      // Place text from text boxes into the end of the array.
-      order.push(
-      {
-        // Delivery Details (Section).
-        UnitNumber: document.getElementById("UnitNumber").value,
-        StreetNumber: document.getElementById("StreetNumber").value,
-        Street: document.getElementById("Street").value,
-        Suburb: document.getElementById("Suburb").value,
-        Postcode: document.getElementById("Postcode").value
-
-        // Add the other information here.
-      }
-      )
-      // Return text boxes to blank ready for next entry.
-      UnitNumber.value = "";
-      StreetNumber.value = "";
-      Street.value = "";
-      Suburb.value = "";
-      Postcode.value = "";
-      displayOrder()
-    }
-
-    function displayOrder() {
-      // Loop through to build up a string "orderString" with the each record and a line break.
-      orderString = "";
-        for (let i = 0; i < order.length; i++) {
-        orderString += order[i].UnitNumber + " - " + order[i].StreetNumber + " - " + order[i].Street + " - " + order[i].Suburb + " - " + order[i].Postcode + "\n"
-      }
-      orderString.value = orderString;
-      // This is for logs.
-      console.log(orderString);
-      document.getElementById("Array").value = JSON.stringify(orderString);
-    }
-
+    <!-- Array Of Records Code-->
+    <script type='text/javascript'>
+    
     </script>
+
   </body>
 </html>
