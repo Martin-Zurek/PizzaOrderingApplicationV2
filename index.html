@@ -1,206 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Title/Icon -->
+    <title>Pizza Ordering Application</title>
+    <link rel="icon" href="assets/icon.png" />
 
-<head>
-  <!-- Title/Icon -->
-  <title>Pizza Ordering Application</title>
-  <link rel="icon" href="assets/icon.png" />
+    <!-- Stylesheet/Font -->
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
 
-  <!-- Stylesheet/Font -->
-  <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <!-- Misc -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-  <!-- Misc -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+  <body>
+    <div id="maintext">
+      <!-- Main Text -->
+      <h1>🍕 Pizza Ordering Application 🥤</h1>
+    </div>
 
-<body>
-  <div id="maintext">
-    <!-- Main Text -->
-    <h1>🍕 Pizza Ordering Application 🥤</h1>
-  </div>
+    <!-- Start Form -->
+    <form class="pizzaform">
+      <ul>
+        <!-- Delivery Details -->
+        <h2>Delivery Details</h2>
+        <li>
+          <input
+            type="text"
+            name="delivery_details"
+            class="field-style field-split align-left"
+            placeholder="Unit Number"
+            required
+          />
+          <input
+            type="text"
+            name="delivery_details"
+            class="field-style field-split align-right"
+            placeholder="Street Number"
+            required
+          />
+        </li>
+        <li>
+          <input
+            type="text"
+            name="delivery_details"
+            class="field-style field-full align-none"
+            placeholder="Street"
+            required
+          />
+        </li>
+        <li>
+          <input
+            type="text"
+            name="delivery_details"
+            class="field-style field-split align-left"
+            placeholder="Suburb"
+            required
+          />
+          <input
+            type="number"
+            name="delivery_details"
+            class="field-style field-split align-right"
+            min="2000"
+            max="2560"
+            maxlength="4"
+            size="4"
+            placeholder="Postcode"
+            required
+          />
+        </li>
+        <br />
+        <hr />
 
-  <!-- Start Form -->
-  <form class="pizzaform">
-    <ul>
+        <!-- Choose Pizza -->
+        <h2>Choose Pizza</h2>
+        <li>
+          <!-- Start Base -->
+          <h3>Pick Base</h3>
+          <input type="radio" name="pizza_base" required /><label>Normal</label
+          ><br />
+          <input type="radio" name="pizza_base" required /><label>Thin</label
+          ><br />
+          <input type="radio" name="pizza_base" required /><label>Deep</label
+          ><br />
+          <input type="radio" name="pizza_base" required /><label>Crispy</label
+          ><br />
+          <input type="radio" name="pizza_base" required /><label>Cheesy</label
+          ><br />
+          <!-- End Base -->
+          <br />
+          <!-- Start Size -->
+          <h3>Pick Size</h3>
+          <input type="radio" name="pizza_size" required /><label>Large</label
+          ><br />
+          <input type="radio" name="pizza_size" required /><label>Medium</label
+          ><br />
+          <input type="radio" name="pizza_size" required /><label>Small</label
+          ><br />
+          <!-- End Size -->
+          <br />
+          <!-- Start Sauce -->
+          <h3>Pick Sauce</h3>
+          <input type="radio" name="pizza_sauce" required /><label>Tomato</label
+          ><br />
+          <input type="radio" name="pizza_sauce" required /><label
+            >Barbeque</label
+          ><br />
+          <!-- End Sauce -->
+          <br />
+          <!-- Start Toppings -->
+          <h3>Pick Toppings</h3>
+          <input
+            type="checkbox"
+            id="toppings1"
+            name="toppings_choice"
+            value="Chicken"
+          />
+          <label for="toppings1">Chicken</label><br />
+          <input
+            type="checkbox"
+            id="toppings2"
+            name="toppings_choice"
+            value="Ground Beef"
+          />
+          <label for="toppings2">Ground Beef</label><br />
+          <input
+            type="checkbox"
+            id="toppings3"
+            name="toppings_choice"
+            value="Sausage"
+          />
+          <label for="toppings3">Sausage</label><br />
+          <input
+            type="checkbox"
+            id="toppings4"
+            name="toppings_choice"
+            value="Bacon"
+          />
+          <label for="toppings4">Bacon</label><br />
+          <input
+            type="checkbox"
+            id="toppings5"
+            name="toppings_choice"
+            value="Onion"
+          />
+          <label for="toppings5">Onion</label><br />
+          <input
+            type="checkbox"
+            id="toppings6"
+            name="toppings_choice"
+            value="Prawn"
+          />
+          <label for="toppings6">Prawn</label><br />
+          <input
+            type="checkbox"
+            id="toppings7"
+            name="toppings_choice"
+            value="Pineapple"
+          />
+          <label for="toppings7">Pineapple</label><br />
+          <input
+            type="checkbox"
+            id="toppings8"
+            name="toppings_choice"
+            value="Olives"
+          />
+          <label for="toppings8">Olives</label><br />
+          <h3>
+            Please click this below if you have finalized your topping
+            selection!
+          </h3>
+          <input
+            type="checkbox"
+            id="toppings9"
+            name="toppings_choice"
+            value="Toppings Selected (True/False)"
+            required
+          />
+          <label for="toppings9">Toppings Selected (True/False)</label><br />
+          <!-- End Toppings -->
+        </li>
+        <br />
+        <hr />
 
-      <!-- Delivery Details -->
-      <h2>Delivery Details</h2>
-      <li>
-        <input type="text" name="delivery_details" class="field-style field-split align-left" placeholder="Unit Number"
-          required />
-        <input type="text" name="delivery_details" class="field-style field-split align-right"
-          placeholder="Street Number" required />
-      </li>
-      <li>
-        <input type="text" name="delivery_details" class="field-style field-full align-none" placeholder="Street"
-          required />
-      </li>
-      <li>
-        <input type="text" name="delivery_details" class="field-style field-split align-left" placeholder="Suburb"
-          required />
-        <input type="number" name="delivery_details" class="field-style field-split align-right" min="2000" max="2560"
-          maxlength="4" size="4" placeholder="Postcode" required />
-      </li>
-      <br>
-      <hr>
+        <!-- Choose Sides/Drink/Desserts -->
+        <h2>Choose Sides/Drink/Desserts</h2>
+        <li>
+          <!-- Start Sides -->
+          <h3>Pick Sides</h3>
+          <input type="radio" name="side_options" required /><label
+            >Garlic Bread</label
+          ><br />
+          <input type="radio" name="side_options" required /><label
+            >Oven Baked Chips</label
+          ><br />
+          <input type="radio" name="side_options" required /><label
+            >Chicken Mega Box</label
+          ><br />
+          <input type="radio" name="side_options" required /><label
+            >Chicken Mini Meatballs</label
+          ><br />
+          <input type="radio" name="side_options" required /><label
+            >No Sides (NONE)</label
+          ><br />
+          <!-- End Sides -->
+          <br />
+          <!-- Start Drink -->
+          <h3>Pick Drink</h3>
+          <input type="radio" name="drink_options" required /><label
+            >Coca Cola</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >Pepsi Max</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >Kofola</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >Seven Up</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >Mountain Dew</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >Sunkist</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label>Solo</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >Cool Ridge Water</label
+          ><br />
+          <input type="radio" name="drink_options" required /><label
+            >No Drink (NONE)</label
+          ><br />
+          <!-- End Drink -->
+          <br />
+          <!-- Start Desserts -->
+          <h3>Pick Desserts</h3>
+          <input type="radio" name="dessert_options" required /><label
+            >Chocolate Lava Cake</label
+          ><br />
+          <input type="radio" name="dessert_options" required /><label
+            >Fudge Brownies</label
+          ><br />
+          <input type="radio" name="dessert_options" required /><label
+            >Oven Baked Churros</label
+          ><br />
+          <input type="radio" name="dessert_options" required /><label
+            >Mini Dutch Pancakes</label
+          ><br />
+          <input type="radio" name="dessert_options" required /><label
+            >No Desserts (NONE)</label
+          ><br />
+          <!-- End Desserts -->
+          <br />
+          <hr />
 
-      <!-- Choose Pizza -->
-      <h2>Choose Pizza</h2>
-      <li>
-        <!-- Start Base -->
-        <h3>Pick Base</h3>
-        <input type="radio" name="pizza_base" required><label>Normal</label><br>
-        <input type="radio" name="pizza_base" required><label>Thin</label><br>
-        <input type="radio" name="pizza_base" required><label>Deep</label><br>
-        <input type="radio" name="pizza_base" required><label>Crispy</label><br>
-        <input type="radio" name="pizza_base" required><label>Cheesy</label><br>
-        <!-- End Base -->
-        <br>
-        <!-- Start Size -->
-        <h3>Pick Size</h3>
-        <input type="radio" name="pizza_size" required><label>Large</label><br>
-        <input type="radio" name="pizza_size" required><label>Medium</label><br>
-        <input type="radio" name="pizza_size" required><label>Small</label><br>
-        <!-- End Size -->
-        <br>
-        <!-- Start Sauce -->
-        <h3>Pick Sauce</h3>
-        <input type="radio" name="pizza_sauce" required><label>Tomato</label><br>
-        <input type="radio" name="pizza_sauce" required><label>Barbeque</label><br>
-        <!-- End Sauce -->
-        <br>
-        <!-- Start Toppings -->
-        <h3>Pick Toppings</h3>
-        <input type="checkbox" id="toppings1" name="toppings_choice" value="Chicken">
-        <label for="toppings1">Chicken</label><br>
-        <input type="checkbox" id="toppings2" name="toppings_choice" value="Ground Beef">
-        <label for="toppings2">Ground Beef</label><br>
-        <input type="checkbox" id="toppings3" name="toppings_choice" value="Sausage">
-        <label for="toppings3">Sausage</label><br>
-        <input type="checkbox" id="toppings4" name="toppings_choice" value="Bacon">
-        <label for="toppings4">Bacon</label><br>
-        <input type="checkbox" id="toppings5" name="toppings_choice" value="Onion">
-        <label for="toppings5">Onion</label><br>
-        <input type="checkbox" id="toppings6" name="toppings_choice" value="Prawn">
-        <label for="toppings6">Prawn</label><br>
-        <input type="checkbox" id="toppings7" name="toppings_choice" value="Pineapple">
-        <label for="toppings7">Pineapple</label><br>
-        <input type="checkbox" id="toppings8" name="toppings_choice" value="Olives">
-        <label for="toppings8">Olives</label><br>
-        <h3>Please click this below if you have finalized your topping selection!</h3>
-        <input type="checkbox" id="toppings9" name="toppings_choice" value="Toppings Selected (True/False)" required>
-        <label for="toppings9">Toppings Selected (True/False)</label><br>
-        <!-- End Toppings -->
-      </li>
-      <br>
-      <hr>
+          <!-- Payment Information -->
+          <h2>Payment Information</h2>
+        </li>
 
-      <!-- Choose Sides/Drink/Desserts -->
-      <h2>Choose Sides/Drink/Desserts</h2>
-      <li>
-        <!-- Start Sides -->
-        <h3>Pick Sides</h3>
-        <input type="radio" name="side_options" required><label>Garlic Bread</label><br>
-        <input type="radio" name="side_options" required><label>Oven Baked Chips</label><br>
-        <input type="radio" name="side_options" required><label>Chicken Mega Box</label><br>
-        <input type="radio" name="side_options" required><label>Chicken Mini Meatballs</label><br>
-        <input type="radio" name="side_options" required><label>No Sides (NONE)</label><br>
-        <!-- End Sides -->
-        <br>
-        <!-- Start Drink -->
-        <h3>Pick Drink</h3>
-        <input type="radio" name="drink_options" required><label>Coca Cola</label><br>
-        <input type="radio" name="drink_options" required><label>Pepsi Max</label><br>
-        <input type="radio" name="drink_options" required><label>Kofola</label><br>
-        <input type="radio" name="drink_options" required><label>Seven Up</label><br>
-        <input type="radio" name="drink_options" required><label>Mountain Dew</label><br>
-        <input type="radio" name="drink_options" required><label>Sunkist</label><br>
-        <input type="radio" name="drink_options" required><label>Solo</label><br>
-        <input type="radio" name="drink_options" required><label>Cool Ridge Water</label><br>
-        <input type="radio" name="drink_options" required><label>No Drink (NONE)</label><br>
-        <!-- End Drink -->
-        <br>
-        <!-- Start Desserts -->
-        <h3>Pick Desserts</h3>
-        <input type="radio" name="dessert_options" required><label>Chocolate Lava Cake</label><br>
-        <input type="radio" name="dessert_options" required><label>Fudge Brownies</label><br>
-        <input type="radio" name="dessert_options" required><label>Oven Baked Churros</label><br>
-        <input type="radio" name="dessert_options" required><label>Mini Dutch Pancakes</label><br>
-        <input type="radio" name="dessert_options" required><label>No Desserts (NONE)</label><br>
-        <!-- End Desserts -->
-        <br>
-        <hr>
+        <li>
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            value="checkbox"
+            class="field-style"
+            required
+          />
+          <label for="checkbox">Paid? (True/False)</label>
+          <br />
+          <br />
+          <h3>Click on the checkbox if you have paid.</h3>
+        </li>
+        <br />
+        <hr />
 
-        <!-- Payment Information -->
-        <h2>Payment Information</h2>
-      <li>
-        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="field-style" required>
-        <label for="checkbox">Paid? (True/False)</label>
-        <br>
-        <br>
-        <h3>Click on the checkbox if you have paid.</h3>
-      </li>
-      <br>
-      <hr>
+        <!-- Order Summary -->
+        <h2>Order Summary</h2>
+        <li>
+          <h3>To confirm your order, click on the button below!</h3>
+          <h3>
+            Additionally, if you wish to reset the pizza ordering system, please
+            refresh the page!
+          </h3>
+          <br />
+          <input type="submit" value="Confirm Order" />
+          <br />
+        </li>
+        <br />
+        <hr />
 
-      <!-- Order Summary -->
-      <h2>Order Summary</h2>
-      <li>
-        <h3>To confirm your order, click on the button below!</h3>
-        <h3>Additionally, if you wish to reset the pizza ordering system, please refresh the page!</h3>
-        <br>
-        <input type="submit" value="Confirm Order" />
-        <br>
-      </li>
-      <br>
-      <hr>
+        <!-- Array Of Records -->
+        <h2>Array Of Records</h2>
+        <li>
+          <h3>
+            <u>WARNING:</u> The array of records is not working. However, you
+            can view the submitted form data in the console. You can open the
+            console using F12 (Google Chrome). The keybinding on other browsers
+            may be different.
+          </h3>
+          <h3>
+            <a
+              href="https://www.youtube.com/watch?v=ADQHhgKmMbU&ab_channel=FleetwoodMac-Topic"
+              >Oh wow! You found me!!! This song sounds cool.</a
+            >
+          </h3>
+        </li>
 
-      <!-- Array Of Records -->
-      <h2>Array Of Records</h2>
-      <li>
-        <h3><u>WARNING:</u> The array of records is not working. You can view the submitted form data in the console.
-          You can open the console using F12 (Google Chrome). The keybinding on other browsers may be different.</h3>
-        <h3><a href="https://www.youtube.com/watch?v=ADQHhgKmMbU&ab_channel=FleetwoodMac-Topic">Oh wow! You found me!!!
-            This song sounds cool.</a></h3>
-      </li>
+        <!-- End Form-->
+      </ul>
+    </form>
 
-      <!-- End Form-->
-    </ul>
-  </form>
+    <!-- Contact Us -->
+    <div class="contact">
+      <h4>
+        📞 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a>
+      </h4>
+    </div>
 
-  <!-- Contact Us -->
-  <div class="contact">
-    <h4>📞 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a></h4>
-  </div>
+    <!-- Bottom Text -->
+    <div id="bottomtext">
+      <h4>Made By Martin</h4>
+    </div>
 
-  <!-- Bottom Text -->
-  <div id="bottomtext">
-    <h4>Made By Martin</h4>
-  </div>
-
-  <!-- Array Of Records Code-->
-  <!-- Code From: https://www.learnwithjason.dev/blog/get-form-values-as-json#use-the-formdata-api-to-access-form-values-in-javascript -->
-  <script type='text/javascript'>
-    function handleSubmit(event) {
-      event.preventDefault();
-      const data = new FormData(event.target);
-      const value = Object.fromEntries(data.entries());
-      value.delivery_details = data.getAll("delivery_details");
-      value.pizza_base = data.getAll("pizza_base");
-      value.pizza_size = data.getAll("pizza_size");
-      value.pizza_sauce = data.getAll("pizza_sauce");
-      value.side_options = data.getAll("side_options");
-      value.drink_options = data.getAll("drink_options");
-      value.dessert_options = data.getAll("dessert_options");
-      value.checkbox = data.getAll("checkbox");
-      console.log({ value });
-    }
-    const form = document.querySelector('form');
-    form.addEventListener('submit', handleSubmit);
-  </script>
-
-</body>
-
+    <!-- Array Of Records Code-->
+    <!-- Code From: https://www.learnwithjason.dev/blog/get-form-values-as-json#use-the-formdata-api-to-access-form-values-in-javascript -->
+    <script type="text/javascript">
+      function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        const value = Object.fromEntries(data.entries());
+        value.delivery_details = data.getAll("delivery_details");
+        value.pizza_base = data.getAll("pizza_base");
+        value.pizza_size = data.getAll("pizza_size");
+        value.pizza_sauce = data.getAll("pizza_sauce");
+        value.side_options = data.getAll("side_options");
+        value.drink_options = data.getAll("drink_options");
+        value.dessert_options = data.getAll("dessert_options");
+        value.checkbox = data.getAll("checkbox");
+        console.log({ value });
+      }
+      const form = document.querySelector("form");
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
 </html>
